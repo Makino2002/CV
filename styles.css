@@ -3,16 +3,16 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #065028;
-  color: #333;
+  background-color: #003333;
+  color: #003333;
   line-height: 1.6;
 }
 
 /* Khung chính */
 .container {
-  width: 90%;
+  width: 95%;
   max-width: 1000px;
-  margin: 30px auto;
+  margin: 15px auto;
   background-color: #ffffff;
   padding: 30px;
   border-radius: 10px;
@@ -23,74 +23,80 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-  background-color: #aaedad;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.header .left {
-  display: flex;
   align-items: flex-start;
-  flex: 1;
+  background-color: #f7f7f7;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.header img {
+/* Bên trái */
+.header-left {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.header-left img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  margin-right: 20px;
+  border: 3px solid #ccc;
   object-fit: cover;
-  border: 3px solid #065028;
 }
 
-.header h1 {
+.header-left .info {
+  max-width: 500px;
+}
+
+.header-left h1 {
   margin: 0;
-  font-size: 28px;
-  color: #065028;
+  font-size: 26px;
+  color: #003333;
 }
 
-.header p {
-  margin: 6px 0;
-  font-size: 16px;
+.header-left .position {
+  font-weight: bold;
+  margin: 5px 0;
+  color: #0d5e3c;
 }
 
-.header .right {
-  text-align: right;
-  min-width: 200px;
-  flex-shrink: 0;
+/* Bên phải */
+.header-right {
+  min-width: 250px;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-.header .right a {
-  color: #065028;
+.header-right a {
+  color: #003333;
   text-decoration: none;
 }
 
-.header .right a:hover {
+.header-right a:hover {
   text-decoration: underline;
 }
 
-/* Responsive (Mobile) */
-@media (max-width: 900px) {
+/* Responsive */
+@media (max-width: 830px) {
   .header {
     flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .header .left {
+  .header-left {
     flex-direction: column;
     align-items: center;
   }
 
-  .header img {
-    margin-bottom: 10px;
-  }
-
-  .header .right {
+  .header-right {
     text-align: center;
   }
 }
+
 
 /* Các section nội dung */
 .section {
@@ -98,10 +104,10 @@ body {
 }
 
 .section h2 {
-  border-bottom: 2px solid #196c19;
+  border-bottom: 2px solid #155a15;
   padding-bottom: 5px;
   margin-bottom: 15px;
-  color: #196c19;
+  color: #0a472e;
   font-size: 22px;
 }
 
@@ -115,7 +121,7 @@ body {
 
 /* Link */
 a {
-  color: #0c6b2e;
+  color: #0d5e3c;
   text-decoration: none;
 }
 a:hover {
