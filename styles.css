@@ -136,3 +136,8 @@ a:hover {
 .contact-info p {
   margin: 5px 0;
 }
+
+ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
